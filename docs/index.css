@@ -1,1 +1,88 @@
+/* Reset default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
+/* Header styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+/* Navigation menu styles */
+.navbar {
+    background-color: #444;
+    text-align: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff9900; /* Change color on hover */
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* About section styles */
+.about {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Call to action button styles */
+.cta-button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e68300; /* Darker color on hover */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Add more styles and structure based on your needs */
