@@ -52,7 +52,7 @@ body, html {
 /* About section styles */
 .about {
     background-color: #f4f4f4;
-    height: 70%;
+    height: 50%;
     text-align: center;
 }
 
@@ -83,6 +83,7 @@ body, html {
     color: #fff;
     text-align: center;
     height: 10%;
+    bottom: 0px;
 }
 
 .fullembed, .fullembed.embed {
