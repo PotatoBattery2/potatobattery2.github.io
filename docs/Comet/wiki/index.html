@@ -10,57 +10,7 @@
     <a href="/Comet"><button>Back</button></a>
   </div>
 
-  <div class="fullembed"></div>
-
-  <script>
-    function fetchDataAndReplaceLinks(originalDomain, currentDomain) {
-  // Get the URL parameter from the query string
-  let urlParam = new URLSearchParams(window.location.search).get("url");
-
-  if (!urlParam) {
-    urlParam = ""
-    return;
-  }
-
-  // Make an AJAX request to fetch the data
-  $.ajax({
-    url: originalDomain + urlParam,
-    method: "GET",
-    success: function (data) {
-      // Create a temporary DOM element to parse the fetched HTML data
-      const tempElement = document.createElement("div");
-      tempElement.innerHTML = data;
-
-      // Iterate through all anchor tags and replace the href attribute
-      const links = tempElement.getElementsByTagName("a");
-      for (let i = 0; i < links.length; i++) {
-        const link = links[i];
-        const href = link.getAttribute("href");
-
-        if (href) {
-          // Check if the href starts with the original domain
-          if (href.startsWith(originalDomain)) {
-            // Replace the href attribute with the current domain
-            link.setAttribute("href", href.replace(originalDomain, currentDomain));
-          }
-        }
-      }
-
-      // Replace the current page content with the modified HTML
-      document.body.innerHTML = tempElement.innerHTML;
-    },
-    error: function (xhr, status, error) {
-      console.error("Error fetching data:", status, error);
-    },
-  });
-}
-
-// Define the original domain and current domain variables
-const originalDomain = "https://github.com/PotatoBattery2/Comet/wiki/"; // Replace with your original domain
-const currentDomain = window.location.origin; // Current domain is the domain of the current page
-
-// Call the function when the page loads
-fetchDataAndReplaceLinks(originalDomain, currentDomain);
-
-  </script>
+  <div class="fullembed">
+    <embed type="text/html" src="beta/index.html">
+  </div>
 </body>
