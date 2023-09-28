@@ -2,6 +2,7 @@
 <head>
   <link rel="stylesheet" href="/index.css">
   <title>Temporary Comet Wiki</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -14,10 +15,10 @@
   <script>
     function fetchDataAndReplaceLinks(originalDomain, currentDomain) {
   // Get the URL parameter from the query string
-  const urlParam = new URLSearchParams(window.location.search).get("url");
+  let urlParam = new URLSearchParams(window.location.search).get("url");
 
   if (!urlParam) {
-    console.error("URL parameter 'url' is missing.");
+    urlParam = ""
     return;
   }
 
