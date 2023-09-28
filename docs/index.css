@@ -85,4 +85,15 @@ body, html {
     padding: 20px 0;
 }
 
-/* Add more styles and structure based on your needs */
+.fullembed {
+    width: 100%;
+    height: 95%;
+    top: 5%
+}
+
+.backbutton {
+    width: 10%;
+    height: 5%;
+    color: white;
+    background-color: green
+}
