@@ -85,7 +85,7 @@ body, html {
     padding: 20px 0;
 }
 
-.fullembed {
+.fullembed, .fullembed.embed {
     width: 100%;
     height: 95%;
     top: 5%
