@@ -24,7 +24,7 @@
 
   // Make an AJAX request to fetch the data
   $.ajax({
-    url: urlParam,
+    url: originalDomain + urlParam,
     method: "GET",
     success: function (data) {
       // Create a temporary DOM element to parse the fetched HTML data
