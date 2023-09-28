@@ -9,7 +9,6 @@ body, html {
 .header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
     height: 10%;
     text-align: center;
 }
@@ -53,7 +52,6 @@ body, html {
 /* About section styles */
 .about {
     background-color: #f4f4f4;
-    padding: 50px;
     height: 70%;
     text-align: center;
 }
@@ -84,7 +82,6 @@ body, html {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
     height: 10%;
 }
 
