@@ -3,13 +3,21 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Container for the entire page content */
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header styles */
 .header {
     background-color: #333;
     color: #fff;
-    height: 100%;
+    padding: 20px;
     text-align: center;
 }
 
@@ -42,6 +50,7 @@ body, html {
     color: #fff;
     text-align: center;
     padding: 100px 0;
+    flex-grow: 1;
 }
 
 .hero h2 {
@@ -51,9 +60,9 @@ body, html {
 
 /* About section styles */
 .about {
-    background-color: #f4f4f4;    
+    background-color: #f4f4f4;
+    padding: 50px;
     text-align: center;
-    height: 100%;
 }
 
 .about p {
@@ -82,8 +91,51 @@ body, html {
     background-color: #333;
     color: #fff;
     text-align: center;
-    height: 100%;
-    bottom: 0px;
+    padding: 20px 0;
+}
+
+/* Ensure the footer sticks to the bottom */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.hero {
+    flex-grow: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Adjust styles for screens smaller than 768px */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 10px 0;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .about {
+        padding: 30px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
 }
 
 .fullembed, .fullembed.embed {
